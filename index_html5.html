@@ -24,15 +24,11 @@
             <!DOCTYPE html>
             <html>
                 <head>
-                    <title>HTML document</title>
+                    <title>HTML 5 document</title>
                     <meta name="keywords" content="">
                     <meta name="description" content="">
                     <meta charset="utf-8">
-                    <style>
-                        p {
-                            color:blueviolet;
-                        }
-                    </style>
+                    <link rel="stylesheet" href="./index.css">
                 </head>
                 <body>
                     <header>
@@ -47,17 +43,11 @@
                     <main>
                         <section>
                             <div>First Section</div>
-                            <form action="" method="GET" enctype="text/plain">
+                            <form action="" method="GET" enctype="application/x-www-form-urlencoded">
                                 <label for="firstname">Name</label>
                                 <input id="firstname" name="firstname" type="text">
                                 <label>Surname</label>
                                 <input name="surname">
-                                <input name="photo" type="file">
-                                <textarea name="content" rows="4" cols="50"></textarea>
-                                <select name="car">
-                                    <option value="1">one</option>
-                                    <option value="2">two</option>
-                                </select>
                                 <button type="submit">Send</button>
                             </form>
                         </section>
