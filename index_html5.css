@@ -1,0 +1,53 @@
+/* 
+    Rule name:
+    - tag name
+    - class name 
+    - id name
+
+    Complex rules.
+
+*/
+body {
+  font-style: italic;
+}
+/* tag specificity: 001 */
+footer {
+  font-weight: bold;
+}
+/* tag specificity: 100 */
+#paragraph {
+  color: red;
+}
+/* tag specificity: 001 */
+p {
+  color: green;
+}
+/* tag specificity: 100 */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+/* tag specificity: 100 */
+#header {
+}
+
+/* Button Click Here styles */
+#send {
+  /* padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 10px; */
+  padding: 5px 20px;
+  /* border-top-width: 3px;
+  border-bottom-width: 4px;
+  border-left-width: 5px;
+  border-right-width: 6px; */
+  border-width: 2px;
+  /* margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 20px; */
+  margin: 20px 5px;
+}
