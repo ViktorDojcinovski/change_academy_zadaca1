@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  font-style: italic;
+}
+
+footer {
+  font-weight: bold;
+}
+
+#paragraph {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: #00f;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#send {
+  border-width: 2px;
+  margin: 20px 5px;
+  padding: 5px 20px;
+}
+
+#myId.class_3 .class_4 {
+  color: green;
+}
+
+#myId .class_1.class_2 {
+  color: red;
+}
+
+header {
+  width: 1000px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+  line-height: 50px;
+}
+
+h1:after {
+  content: "after";
+  position: relative;
+}
+
+h1:before {
+  content: "";
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+footer a {
+  color: #ff0;
+}
+
+footer a:hover {
+  color: green;
+}
+
+/*# sourceMappingURL=index_html5.fa0466bf.css.map */

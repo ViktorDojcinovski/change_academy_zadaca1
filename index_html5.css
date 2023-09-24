@@ -1,0 +1,118 @@
+/* 
+    Simple rules:
+    - tag name
+    - class name 
+    - id name
+
+    Complex rules:
+    Complex rules are rules that can target an element using more than one 
+    hook (tag, class attribute or id attribute).
+*/
+
+/* 
+Centering technics:
+ - *auto 
+ - width
+ - line-height
+ - text-align
+*/
+
+/* Pseudo classes and pseudo elements */
+
+body {
+  font-style: italic;
+  text-align: center;
+}
+/* tag specificity: 001 */
+footer {
+  font-weight: bold;
+}
+/* tag specificity: 100 */
+#paragraph {
+  color: red;
+}
+/* tag specificity: 001 */
+p {
+  color: green;
+}
+/* tag specificity: 010 */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+/* tag specificity: 100 */
+#header {
+}
+
+/* Button Click Here styles */
+#send {
+  /* padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 10px; */
+  padding: 5px 20px;
+  /* border-top-width: 3px;
+  border-bottom-width: 4px;
+  border-left-width: 5px;
+  border-right-width: 6px; */
+  border-width: 2px;
+  /* margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 20px; */
+  margin: 20px 5px;
+}
+
+/*
+Exercise:
+  Which rule have greater specificity:
+  1. #myId .class_1.class_2
+  2. #myId.class_3 .class_4
+
+  Why?
+*/
+
+/* 120 */
+#myId.class_3 .class_4 {
+  color: green;
+}
+
+/* 120 */
+#myId .class_1.class_2 {
+  color: red;
+}
+
+header {
+  width: 1000px;
+  margin: 10px auto;
+}
+
+h1 {
+  line-height: 50px;
+  text-align: center;
+}
+
+h1:after {
+  content: "after";
+  position: relative;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  left: 10px;
+  top: 10px;
+}
+
+footer a {
+  color: yellow;
+}
+
+footer a:hover {
+  color: green;
+}
