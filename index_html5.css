@@ -82,17 +82,17 @@ Exercise:
 }
 
 header {
-  width: 1000px;
   margin: 10px auto;
-  position: relative;
+  background-color: grey;
+  width: 600px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
 }
 
 h1 {
   line-height: 50px;
   text-align: center;
-  position: relative;
-  width: 1000px;
-  height: 500px;
 }
 
 h1 img {
@@ -131,4 +131,41 @@ footer a:hover {
 span {
   display: inline-block;
   margin: 20px;
+}
+/* Absolute positioning */
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  top: 50px;
+  z-index: 20;
+}
+
+.child_2 {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  position: relative;
+  top: 50px;
+  z-index: 20;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    width: 200px;
+  }
 }
