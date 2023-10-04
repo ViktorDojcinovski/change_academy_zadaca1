@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./flexbox.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your Logo</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+    <!-- Vertically centered element -->
+      <section class="vertically-centered">
+        <p>My content for my vertically centered element.</p>
+      </section>
+    <!-- Image gallery -->
+      <section id="image-gallery">
+        <div class="wrapper">
+            <img
+              src="image1.jpeg"
+              alt="Image 1"
+            />
+            <img
+              src="image2.jpeg"
+              alt="Image 2"
+            />
+            <img
+              src="image4.jpeg"
+              alt="Image 2"
+            />
+        </div>
+        </div>
+      </section>
+    <!-- Cards structure -->
+      <section id="cards">
+        <div class="wrapper">
+            <div>
+              <img src="image1.jpeg" alt="Card 1 Image">
+              <h2>Card Title 1</h2>
+              <p>Card Description 1</p>
+            </div>
+            <div>
+                <img src="image2.jpeg" alt="Card 1 Image">
+                <h2>Card Title 2</h2>
+                <p>Card Description 1</p>
+            </div>
+          </div>
+      </section>
+      <!-- Equal height columns -->
+      <section>
+        <div style="display: flex; gap: 20px;">
+            <div style="flex: 1; border: 1px solid #ccc; padding: 10px;">
+              <h2>Column 1</h2>
+              <p>Content...</p>
+            </div>
+            <div style="flex: 1; border: 1px solid #ccc; padding: 10px;">
+              <h2>Column 2</h2>
+              <p>Content...</p>
+            </div>
+          </div>
+      </section>
+
+      <div style="display: flex; gap: 20px;">
+        <aside style="flex: 0 0 200px; border: 1px solid #ccc; padding: 1em;">
+          <h2>Sidebar</h2>
+          <p>Sidebar Content...</p>
+        </aside>
+        <main style="flex: 1; border: 1px solid #ccc; padding: 1em;">
+          <h2>Main Content</h2>
+          <p>Main Content Goes Here...</p>
+        </main>
+      </div>
+    </main>
+    <footer>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </footer>
+  </body>
+</html>

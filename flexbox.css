@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.vertically-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+#image-gallery .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#image-gallery img {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
+}
+
+#cards .wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+#cards .wrapper > div {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+#cards .wrapper > div img {
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f0f0f0;
+}
+
+footer img {
+  width: 30px;
+}
