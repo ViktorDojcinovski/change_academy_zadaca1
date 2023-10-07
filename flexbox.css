@@ -10,6 +10,16 @@ header nav {
   gap: 20px;
 }
 
+header nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+}
+
+header nav a:hover {
+  font-weight: bold;
+}
+
 section {
   margin-bottom: 50px;
 }
@@ -21,6 +31,40 @@ section {
   height: 200px;
   border: 1px solid #ccc;
 }
+
+#image-gallery {
+}
+
+/* #image-galery .wrapper {} */
+#image-gallery > div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+#image-gallery > div img {
+  max-width: 200px;
+}
+
+#cards .wrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+#cards .wrapper div {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  flex: 1;
+}
+
+#cards .wrapper div img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* SPOILER ALERT */
 
 #image-gallery .wrapper {
   display: flex;
@@ -60,4 +104,32 @@ footer {
 
 footer img {
   width: 30px;
+}
+
+#equal_columns {
+  display: flex;
+  gap: 20px;
+}
+
+#equal_columns > div {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#with_sidebar {
+  display: flex;
+  gap: 20px;
+}
+
+#with_sidebar aside {
+  flex: 0 0 200px;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+#with_sidebar main {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 1em;
 }
