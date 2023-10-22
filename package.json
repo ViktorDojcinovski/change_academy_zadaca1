@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "parcel index.html --port 1234",
-    "start-html5": "parcel index_html5.html --port 1235",
+    "start-html5": "parcel index_bootstrap.html --port 1235",
     "test": "echo 'Test'"
   },
   "repository": {
